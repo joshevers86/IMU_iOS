@@ -8,8 +8,10 @@
 
 import UIKit
 import CoreMotion
+import MessageUI
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     var inicio : BLEDiscovery!
     
@@ -29,17 +31,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var yLectGBLE: UILabel!
     @IBOutlet weak var zLectGBLE: UILabel!
     
+    @IBOutlet weak var scroll: UIScrollView!
     
     fileprivate let manejador = CMMotionManager()
     fileprivate let cola = OperationQueue()
     fileprivate let colaGyro = OperationQueue()
     var runLecturaBle : Bool = false
     
+    var directorio : String = String()
+    var manejadorFicheros : FileManager? = nil
+    let nombreFichero : String = "testimu.txt"
+    var path : URL? = nil
+    
+    var salvarDatos : String = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         inicio = BLEDiscovery()
         datosBluetooth()
+        
+        
+        directorio = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last!
+        manejadorFicheros = FileManager.default
+        if let dir = manejadorFicheros!.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            self.path = dir.appendingPathComponent(nombreFichero)
+            
+        }
+        self.salvarDatos = "xAcciOS \t yAcciOS \t zAcciOS \t xGyriOS \t yGyriOS \t zGyriOS \t xAccBLE \t yAccBLE \t zAccBLE \t xGyrBLE \t yGyrBLE \t zGyrBLE \n"
+        
     }
     
 
@@ -80,11 +101,18 @@ class ViewController: UIViewController {
                             self.yLectGBLE.text = "\(datosTroceados[2])"
                             self.zLectGBLE.text = "\(datosTroceados[3])"
                             
-                            print("Datos: \(datosTroceados[0]) \(datosTroceados[1]) \(datosTroceados[2]) \(datosTroceados[3]) \(datosTroceados[4]) \(datosTroceados[5]) \(datosTroceados[6]) \(datosTroceados[7]) ")
+                            //print("Datos: \(datosTroceados[0]) \(datosTroceados[1]) \(datosTroceados[2]) \(datosTroceados[3]) \(datosTroceados[4]) \(datosTroceados[5]) \(datosTroceados[6]) \(datosTroceados[7]) ")
+                            
+                            //print( self.xLec.text! + "\t" + self.yLec.text! + "\t" + self.zLec.text! + "\t" + self.xLectG.text! + "\t" + self.yLectG.text! + "\t" + self.zLectZ.text! + "\t" + self.xLectABLE.text! + "\t" + self.yLectABLE.text! + "\t" + self.yLectABLE.text! + "\t" + self.xLectGBLE.text! + "\t" + self.yLectGBLE.text! + "\t" + self.zLectGBLE.text! )
+                            
+                            
+                            self.salvarDatos += self.xLec.text! + "\t" + self.yLec.text! + "\t" + self.zLec.text! + "\t" + self.xLectG.text! + "\t" + self.yLectG.text! + "\t" + self.zLectZ.text! + "\t" + self.xLectABLE.text! + "\t" + self.yLectABLE.text! + "\t" + self.zLectABLE.text! + "\t" + self.xLectGBLE.text! + "\t" + self.yLectGBLE.text! + "\t" + self.zLectGBLE.text! + "\n"
+                            
+                            
                         })
                     }
                 }
-                usleep(20_000) //20ms
+                usleep(1_000) //20ms 1ms sin que se repitan los datos
             }
         }
     }
@@ -136,4 +164,91 @@ class ViewController: UIViewController {
             print ("acc no available")
         }
     }
+    
+    
+    
+    /*eMAIL*/
+    
+    
+    @IBAction func enviarCorreo(_ sender: AnyObject) {
+        
+        print(self.salvarDatos)
+        if !escribirDatosEnFichero(data: self.salvarDatos){
+            print("No se ha podido escribir el fichero.")
+        }
+        
+        
+        //Check to see the device can send email.
+        if( MFMailComposeViewController.canSendMail() ) {
+            
+            let mailComposer = MFMailComposeViewController()
+            mailComposer.mailComposeDelegate = self
+            
+            //Set the subject and message of the email
+            
+            mailComposer.setToRecipients(["jonaal1@upv.es"])
+            mailComposer.setSubject("Fichero datos IMU-BLE y matriz")
+            mailComposer.setMessageBody("Fichero para cargarlo en Matlab.", isHTML: false)
+            
+            
+            if let filePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
+                
+                let fPath = filePath.appendingPathComponent(nombreFichero)
+                if let fileData = NSData(contentsOfFile: fPath.path ) {
+                    
+                    mailComposer.addAttachmentData(fileData as Data, mimeType: "text/plain", fileName: "testimu")
+                }
+            }
+            
+            present(mailComposer, animated: true)
+            
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
+    
+    
+     func escribirDatosEnFichero(data: String!) -> Bool{
+        do {
+            try data.write(to: self.path!, atomically: true, encoding: String.Encoding.utf8)
+            return true
+        }
+        catch {
+            print("NO se puede guardar: \(data)")
+            return false
+        }
+    }
+    
+     func clearTempFolder() {
+        //let fileManager = FileManager.default
+        let tempFolderPath = NSTemporaryDirectory()
+        
+        do{
+            let pat = try manejadorFicheros?.contentsOfDirectory(atPath: directorio)
+            for filePath in pat! {
+                print(filePath)
+                try manejadorFicheros?.removeItem(atPath: directorio+"/" + filePath)
+            }
+        } catch let err as NSError{
+            print("Could not clear temp folder: \(err.debugDescription)")
+        }
+        
+        
+        do {
+            let filePaths = try manejadorFicheros?.contentsOfDirectory(atPath: tempFolderPath)
+            for filePath in filePaths! {
+                try manejadorFicheros?.removeItem(atPath: NSTemporaryDirectory() + filePath)
+            }
+        } catch let error as NSError {
+            print("Could not clear temp folder: \(error.debugDescription)")
+        }
+    }
+
+    
+    
+    
+    
 }

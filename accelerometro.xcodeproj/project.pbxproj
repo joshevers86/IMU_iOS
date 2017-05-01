@@ -50,6 +50,7 @@
 		8295D6F41EB5379A0026500A /* imu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6F31EB5379A0026500A /* imu.png */; };
 		8295D7031EB54FB80026500A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295D7021EB54FB80026500A /* LaunchScreen.storyboard */; };
 		8295D7061EB55A4B0026500A /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295D7081EB55A4B0026500A /* iPad.storyboard */; };
+		829AE6F81EB7F56B000D0520 /* enviar_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AE6F71EB7F56B000D0520 /* enviar_64.png */; };
 		82DAD68B1C5107DD0087EF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAD68A1C5107DD0087EF65 /* AppDelegate.swift */; };
 		82DAD68D1C5107DD0087EF65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAD68C1C5107DD0087EF65 /* ViewController.swift */; };
 		82DAD6901C5107DD0087EF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DAD68E1C5107DD0087EF65 /* Main.storyboard */; };
@@ -105,6 +106,7 @@
 		8295D7071EB55A4B0026500A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPad.storyboard; sourceTree = "<group>"; };
 		8295D70A1EB55A520026500A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iPad.strings; sourceTree = "<group>"; };
 		8295D70C1EB55A530026500A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/iPad.strings; sourceTree = "<group>"; };
+		829AE6F71EB7F56B000D0520 /* enviar_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enviar_64.png; sourceTree = "<group>"; };
 		82DAD6871C5107DD0087EF65 /* accelerometro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accelerometro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DAD68A1C5107DD0087EF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82DAD68C1C5107DD0087EF65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		8295D6931EB4FB8B0026500A /* iconoImu */ = {
 			isa = PBXGroup;
 			children = (
+				829AE6F71EB7F56B000D0520 /* enviar_64.png */,
 				8295D6941EB4FB8B0026500A /* iconos */,
 			);
 			path = iconoImu;
@@ -298,6 +301,7 @@
 				8295D6DD1EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings.png in Resources */,
 				8295D6E01EB4FB8C0026500A /* iPhone Spotlight iOS 7,9.png in Resources */,
 				8295D6BE1EB4FB8C0026500A /* Apple Watch Home Screen@2x.png in Resources */,
+				829AE6F81EB7F56B000D0520 /* enviar_64.png in Resources */,
 				8295D6D71EB4FB8C0026500A /* iPad Spotlight iOS 7,9.png in Resources */,
 				8295D6C01EB4FB8C0026500A /* Apple Watch Notification center (38mm).png in Resources */,
 				8295D6D01EB4FB8C0026500A /* iPad App Icon iOS 7,9.png in Resources */,
