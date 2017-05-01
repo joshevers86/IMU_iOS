@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Giróscopo"; ObjectID = "1oS-gD-MSu"; */
+"1oS-gD-MSu.text" = "Giróscopo";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1tK-kh-HNn"; */
+"1tK-kh-HNn.text" = "Label";
+
+/* Class = "UILabel"; text = "X:"; ObjectID = "2u8-t0-TAq"; */
+"2u8-t0-TAq.text" = "X:";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "45j-Y2-QpD"; */
+"45j-Y2-QpD.normalTitle" = "Parar";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6Ja-4M-alV"; */
+"6Ja-4M-alV.text" = "Label";
+
+/* Class = "UILabel"; text = "Y:"; ObjectID = "6aL-DC-DIJ"; */
+"6aL-DC-DIJ.text" = "Y:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6hu-tX-EL3"; */
+"6hu-tX-EL3.text" = "Label";
+
+/* Class = "UILabel"; text = "Acelerométro"; ObjectID = "B87-dF-F89"; */
+"B87-dF-F89.text" = "Acelerométro";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GOL-DR-XoZ"; */
+"GOL-DR-XoZ.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Run"; ObjectID = "JVB-q2-Uem"; */
+"JVB-q2-Uem.normalTitle" = "Iniciar";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Opw-DF-tCr"; */
+"Opw-DF-tCr.text" = "Label";
+
+/* Class = "UILabel"; text = "X:"; ObjectID = "U58-FB-xf3"; */
+"U58-FB-xf3.text" = "X:";
+
+/* Class = "UILabel"; text = "Z:"; ObjectID = "fms-x3-iij"; */
+"fms-x3-iij.text" = "Z:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kvN-zK-ItL"; */
+"kvN-zK-ItL.text" = "Label";
+
+/* Class = "UILabel"; text = "Z:"; ObjectID = "kxN-9b-TDY"; */
+"kxN-9b-TDY.text" = "Z:";
+
+/* Class = "UILabel"; text = "Y:"; ObjectID = "zeR-3F-u7H"; */
+"zeR-3F-u7H.text" = "Y:";

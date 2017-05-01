@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		826E965F1EB699C2002003B0 /* BLEDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826E965E1EB699C2002003B0 /* BLEDiscovery.swift */; };
+		8295D6BC1EB4FB8C0026500A /* Apple Watch Companion Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6951EB4FB8B0026500A /* Apple Watch Companion Settings@2x.png */; };
+		8295D6BD1EB4FB8C0026500A /* Apple Watch Companion Settings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6961EB4FB8B0026500A /* Apple Watch Companion Settings@3x.png */; };
+		8295D6BE1EB4FB8C0026500A /* Apple Watch Home Screen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6971EB4FB8B0026500A /* Apple Watch Home Screen@2x.png */; };
+		8295D6BF1EB4FB8C0026500A /* Apple Watch Long Look (42mm).png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6981EB4FB8B0026500A /* Apple Watch Long Look (42mm).png */; };
+		8295D6C01EB4FB8C0026500A /* Apple Watch Notification center (38mm).png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6991EB4FB8B0026500A /* Apple Watch Notification center (38mm).png */; };
+		8295D6C11EB4FB8C0026500A /* Apple Watch Notification center (42mm).png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D69A1EB4FB8B0026500A /* Apple Watch Notification center (42mm).png */; };
+		8295D6C21EB4FB8C0026500A /* Apple Watch Short Look (38mm).png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D69B1EB4FB8B0026500A /* Apple Watch Short Look (38mm).png */; };
+		8295D6C31EB4FB8C0026500A /* Apple Watch Short Look (42mm).png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D69C1EB4FB8B0026500A /* Apple Watch Short Look (42mm).png */; };
+		8295D6C41EB4FB8C0026500A /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 8295D69D1EB4FB8B0026500A /* Icon */; };
+		8295D6C51EB4FB8C0026500A /* iMessage (27x20pt)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D69E1EB4FB8B0026500A /* iMessage (27x20pt)@2x.png */; };
+		8295D6C61EB4FB8C0026500A /* iMessage (27x20pt)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D69F1EB4FB8B0026500A /* iMessage (27x20pt)@3x.png */; };
+		8295D6C71EB4FB8C0026500A /* iMessage (32x24pt)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A01EB4FB8B0026500A /* iMessage (32x24pt)@2x.png */; };
+		8295D6C81EB4FB8C0026500A /* iMessage (32x24pt)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A11EB4FB8B0026500A /* iMessage (32x24pt)@3x.png */; };
+		8295D6C91EB4FB8C0026500A /* iMessage App Store.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A21EB4FB8C0026500A /* iMessage App Store.png */; };
+		8295D6CA1EB4FB8C0026500A /* iMessage iPad Pro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A31EB4FB8C0026500A /* iMessage iPad Pro@2x.png */; };
+		8295D6CB1EB4FB8C0026500A /* iMessage iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A41EB4FB8C0026500A /* iMessage iPad@2x.png */; };
+		8295D6CC1EB4FB8C0026500A /* iMessage iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A51EB4FB8C0026500A /* iMessage iPhone@2x.png */; };
+		8295D6CD1EB4FB8C0026500A /* iMessage iPhone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A61EB4FB8C0026500A /* iMessage iPhone@3x.png */; };
+		8295D6CE1EB4FB8C0026500A /* iPad App Icon iOS 5,6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A71EB4FB8C0026500A /* iPad App Icon iOS 5,6.png */; };
+		8295D6CF1EB4FB8C0026500A /* iPad App Icon iOS 5,6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A81EB4FB8C0026500A /* iPad App Icon iOS 5,6@2x.png */; };
+		8295D6D01EB4FB8C0026500A /* iPad App Icon iOS 7,9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6A91EB4FB8C0026500A /* iPad App Icon iOS 7,9.png */; };
+		8295D6D11EB4FB8C0026500A /* iPad App Icon iOS 7,9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6AA1EB4FB8C0026500A /* iPad App Icon iOS 7,9@2x.png */; };
+		8295D6D21EB4FB8C0026500A /* iPad Pro Icon iOS 9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6AB1EB4FB8C0026500A /* iPad Pro Icon iOS 9@2x.png */; };
+		8295D6D31EB4FB8C0026500A /* iPad Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6AC1EB4FB8C0026500A /* iPad Settings.png */; };
+		8295D6D41EB4FB8C0026500A /* iPad Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6AD1EB4FB8C0026500A /* iPad Settings@2x.png */; };
+		8295D6D51EB4FB8C0026500A /* iPad Spotlight iOS 5,6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6AE1EB4FB8C0026500A /* iPad Spotlight iOS 5,6.png */; };
+		8295D6D61EB4FB8C0026500A /* iPad Spotlight iOS 5,6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6AF1EB4FB8C0026500A /* iPad Spotlight iOS 5,6@2x.png */; };
+		8295D6D71EB4FB8C0026500A /* iPad Spotlight iOS 7,9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B01EB4FB8C0026500A /* iPad Spotlight iOS 7,9.png */; };
+		8295D6D81EB4FB8C0026500A /* iPad Spotlight iOS 7,9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B11EB4FB8C0026500A /* iPad Spotlight iOS 7,9@2x.png */; };
+		8295D6D91EB4FB8C0026500A /* iPhone App Icon iOS 5,6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B21EB4FB8C0026500A /* iPhone App Icon iOS 5,6.png */; };
+		8295D6DA1EB4FB8C0026500A /* iPhone App Icon iOS 5,6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B31EB4FB8C0026500A /* iPhone App Icon iOS 5,6@2x.png */; };
+		8295D6DB1EB4FB8C0026500A /* iPhone App Icon iOS 7,9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B41EB4FB8C0026500A /* iPhone App Icon iOS 7,9@2x.png */; };
+		8295D6DC1EB4FB8C0026500A /* iPhone App Icon iOS 7,9@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B51EB4FB8C0026500A /* iPhone App Icon iOS 7,9@3x.png */; };
+		8295D6DD1EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B61EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings.png */; };
+		8295D6DE1EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B71EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@2x.png */; };
+		8295D6DF1EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B81EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@3x.png */; };
+		8295D6E01EB4FB8C0026500A /* iPhone Spotlight iOS 7,9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6B91EB4FB8C0026500A /* iPhone Spotlight iOS 7,9.png */; };
+		8295D6E11EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6BA1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@2x.png */; };
+		8295D6E21EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6BB1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@3x.png */; };
+		8295D6F41EB5379A0026500A /* imu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8295D6F31EB5379A0026500A /* imu.png */; };
+		8295D7031EB54FB80026500A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295D7021EB54FB80026500A /* LaunchScreen.storyboard */; };
+		8295D7061EB55A4B0026500A /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295D7081EB55A4B0026500A /* iPad.storyboard */; };
+		82DAD68B1C5107DD0087EF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAD68A1C5107DD0087EF65 /* AppDelegate.swift */; };
+		82DAD68D1C5107DD0087EF65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAD68C1C5107DD0087EF65 /* ViewController.swift */; };
+		82DAD6901C5107DD0087EF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DAD68E1C5107DD0087EF65 /* Main.storyboard */; };
+		82DAD6921C5107DD0087EF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DAD6911C5107DD0087EF65 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		826E965E1EB699C2002003B0 /* BLEDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDiscovery.swift; sourceTree = "<group>"; };
+		8295D6951EB4FB8B0026500A /* Apple Watch Companion Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Companion Settings@2x.png"; sourceTree = "<group>"; };
+		8295D6961EB4FB8B0026500A /* Apple Watch Companion Settings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Companion Settings@3x.png"; sourceTree = "<group>"; };
+		8295D6971EB4FB8B0026500A /* Apple Watch Home Screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Home Screen@2x.png"; sourceTree = "<group>"; };
+		8295D6981EB4FB8B0026500A /* Apple Watch Long Look (42mm).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Long Look (42mm).png"; sourceTree = "<group>"; };
+		8295D6991EB4FB8B0026500A /* Apple Watch Notification center (38mm).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Notification center (38mm).png"; sourceTree = "<group>"; };
+		8295D69A1EB4FB8B0026500A /* Apple Watch Notification center (42mm).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Notification center (42mm).png"; sourceTree = "<group>"; };
+		8295D69B1EB4FB8B0026500A /* Apple Watch Short Look (38mm).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Short Look (38mm).png"; sourceTree = "<group>"; };
+		8295D69C1EB4FB8B0026500A /* Apple Watch Short Look (42mm).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Short Look (42mm).png"; sourceTree = "<group>"; };
+		8295D69D1EB4FB8B0026500A /* Icon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon"; sourceTree = "<group>"; };
+		8295D69E1EB4FB8B0026500A /* iMessage (27x20pt)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage (27x20pt)@2x.png"; sourceTree = "<group>"; };
+		8295D69F1EB4FB8B0026500A /* iMessage (27x20pt)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage (27x20pt)@3x.png"; sourceTree = "<group>"; };
+		8295D6A01EB4FB8B0026500A /* iMessage (32x24pt)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage (32x24pt)@2x.png"; sourceTree = "<group>"; };
+		8295D6A11EB4FB8B0026500A /* iMessage (32x24pt)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage (32x24pt)@3x.png"; sourceTree = "<group>"; };
+		8295D6A21EB4FB8C0026500A /* iMessage App Store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage App Store.png"; sourceTree = "<group>"; };
+		8295D6A31EB4FB8C0026500A /* iMessage iPad Pro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage iPad Pro@2x.png"; sourceTree = "<group>"; };
+		8295D6A41EB4FB8C0026500A /* iMessage iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage iPad@2x.png"; sourceTree = "<group>"; };
+		8295D6A51EB4FB8C0026500A /* iMessage iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage iPhone@2x.png"; sourceTree = "<group>"; };
+		8295D6A61EB4FB8C0026500A /* iMessage iPhone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iMessage iPhone@3x.png"; sourceTree = "<group>"; };
+		8295D6A71EB4FB8C0026500A /* iPad App Icon iOS 5,6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad App Icon iOS 5,6.png"; sourceTree = "<group>"; };
+		8295D6A81EB4FB8C0026500A /* iPad App Icon iOS 5,6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad App Icon iOS 5,6@2x.png"; sourceTree = "<group>"; };
+		8295D6A91EB4FB8C0026500A /* iPad App Icon iOS 7,9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad App Icon iOS 7,9.png"; sourceTree = "<group>"; };
+		8295D6AA1EB4FB8C0026500A /* iPad App Icon iOS 7,9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad App Icon iOS 7,9@2x.png"; sourceTree = "<group>"; };
+		8295D6AB1EB4FB8C0026500A /* iPad Pro Icon iOS 9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Pro Icon iOS 9@2x.png"; sourceTree = "<group>"; };
+		8295D6AC1EB4FB8C0026500A /* iPad Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Settings.png"; sourceTree = "<group>"; };
+		8295D6AD1EB4FB8C0026500A /* iPad Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Settings@2x.png"; sourceTree = "<group>"; };
+		8295D6AE1EB4FB8C0026500A /* iPad Spotlight iOS 5,6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Spotlight iOS 5,6.png"; sourceTree = "<group>"; };
+		8295D6AF1EB4FB8C0026500A /* iPad Spotlight iOS 5,6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Spotlight iOS 5,6@2x.png"; sourceTree = "<group>"; };
+		8295D6B01EB4FB8C0026500A /* iPad Spotlight iOS 7,9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Spotlight iOS 7,9.png"; sourceTree = "<group>"; };
+		8295D6B11EB4FB8C0026500A /* iPad Spotlight iOS 7,9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Spotlight iOS 7,9@2x.png"; sourceTree = "<group>"; };
+		8295D6B21EB4FB8C0026500A /* iPhone App Icon iOS 5,6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone App Icon iOS 5,6.png"; sourceTree = "<group>"; };
+		8295D6B31EB4FB8C0026500A /* iPhone App Icon iOS 5,6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone App Icon iOS 5,6@2x.png"; sourceTree = "<group>"; };
+		8295D6B41EB4FB8C0026500A /* iPhone App Icon iOS 7,9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone App Icon iOS 7,9@2x.png"; sourceTree = "<group>"; };
+		8295D6B51EB4FB8C0026500A /* iPhone App Icon iOS 7,9@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone App Icon iOS 7,9@3x.png"; sourceTree = "<group>"; };
+		8295D6B61EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 5,6 & Settings.png"; sourceTree = "<group>"; };
+		8295D6B71EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 5,6 & Settings@2x.png"; sourceTree = "<group>"; };
+		8295D6B81EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 5,6 & Settings@3x.png"; sourceTree = "<group>"; };
+		8295D6B91EB4FB8C0026500A /* iPhone Spotlight iOS 7,9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 7,9.png"; sourceTree = "<group>"; };
+		8295D6BA1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 7,9@2x.png"; sourceTree = "<group>"; };
+		8295D6BB1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 7,9@3x.png"; sourceTree = "<group>"; };
+		8295D6E31EB4FBAC0026500A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		8295D6F11EB4FF0A0026500A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		8295D6F31EB5379A0026500A /* imu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imu.png; sourceTree = "<group>"; };
+		8295D6F81EB54D5E0026500A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		8295D7021EB54FB80026500A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8295D7071EB55A4B0026500A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPad.storyboard; sourceTree = "<group>"; };
+		8295D70A1EB55A520026500A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iPad.strings; sourceTree = "<group>"; };
+		8295D70C1EB55A530026500A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/iPad.strings; sourceTree = "<group>"; };
+		82DAD6871C5107DD0087EF65 /* accelerometro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accelerometro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DAD68A1C5107DD0087EF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82DAD68C1C5107DD0087EF65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82DAD68F1C5107DD0087EF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82DAD6911C5107DD0087EF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82DAD6841C5107DD0087EF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8295D6931EB4FB8B0026500A /* iconoImu */ = {
+			isa = PBXGroup;
+			children = (
+				8295D6941EB4FB8B0026500A /* iconos */,
+			);
+			path = iconoImu;
+			sourceTree = "<group>";
+		};
+		8295D6941EB4FB8B0026500A /* iconos */ = {
+			isa = PBXGroup;
+			children = (
+				8295D6951EB4FB8B0026500A /* Apple Watch Companion Settings@2x.png */,
+				8295D6961EB4FB8B0026500A /* Apple Watch Companion Settings@3x.png */,
+				8295D6971EB4FB8B0026500A /* Apple Watch Home Screen@2x.png */,
+				8295D6981EB4FB8B0026500A /* Apple Watch Long Look (42mm).png */,
+				8295D6991EB4FB8B0026500A /* Apple Watch Notification center (38mm).png */,
+				8295D69A1EB4FB8B0026500A /* Apple Watch Notification center (42mm).png */,
+				8295D69B1EB4FB8B0026500A /* Apple Watch Short Look (38mm).png */,
+				8295D69C1EB4FB8B0026500A /* Apple Watch Short Look (42mm).png */,
+				8295D69D1EB4FB8B0026500A /* Icon */,
+				8295D69E1EB4FB8B0026500A /* iMessage (27x20pt)@2x.png */,
+				8295D69F1EB4FB8B0026500A /* iMessage (27x20pt)@3x.png */,
+				8295D6A01EB4FB8B0026500A /* iMessage (32x24pt)@2x.png */,
+				8295D6A11EB4FB8B0026500A /* iMessage (32x24pt)@3x.png */,
+				8295D6A21EB4FB8C0026500A /* iMessage App Store.png */,
+				8295D6A31EB4FB8C0026500A /* iMessage iPad Pro@2x.png */,
+				8295D6A41EB4FB8C0026500A /* iMessage iPad@2x.png */,
+				8295D6A51EB4FB8C0026500A /* iMessage iPhone@2x.png */,
+				8295D6A61EB4FB8C0026500A /* iMessage iPhone@3x.png */,
+				8295D6A71EB4FB8C0026500A /* iPad App Icon iOS 5,6.png */,
+				8295D6A81EB4FB8C0026500A /* iPad App Icon iOS 5,6@2x.png */,
+				8295D6A91EB4FB8C0026500A /* iPad App Icon iOS 7,9.png */,
+				8295D6AA1EB4FB8C0026500A /* iPad App Icon iOS 7,9@2x.png */,
+				8295D6AB1EB4FB8C0026500A /* iPad Pro Icon iOS 9@2x.png */,
+				8295D6AC1EB4FB8C0026500A /* iPad Settings.png */,
+				8295D6AD1EB4FB8C0026500A /* iPad Settings@2x.png */,
+				8295D6AE1EB4FB8C0026500A /* iPad Spotlight iOS 5,6.png */,
+				8295D6AF1EB4FB8C0026500A /* iPad Spotlight iOS 5,6@2x.png */,
+				8295D6B01EB4FB8C0026500A /* iPad Spotlight iOS 7,9.png */,
+				8295D6B11EB4FB8C0026500A /* iPad Spotlight iOS 7,9@2x.png */,
+				8295D6B21EB4FB8C0026500A /* iPhone App Icon iOS 5,6.png */,
+				8295D6B31EB4FB8C0026500A /* iPhone App Icon iOS 5,6@2x.png */,
+				8295D6B41EB4FB8C0026500A /* iPhone App Icon iOS 7,9@2x.png */,
+				8295D6B51EB4FB8C0026500A /* iPhone App Icon iOS 7,9@3x.png */,
+				8295D6B61EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings.png */,
+				8295D6B71EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@2x.png */,
+				8295D6B81EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@3x.png */,
+				8295D6B91EB4FB8C0026500A /* iPhone Spotlight iOS 7,9.png */,
+				8295D6BA1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@2x.png */,
+				8295D6BB1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@3x.png */,
+			);
+			path = iconos;
+			sourceTree = "<group>";
+		};
+		8295D6F21EB5379A0026500A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8295D6F31EB5379A0026500A /* imu.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		82DAD67E1C5107DD0087EF65 = {
+			isa = PBXGroup;
+			children = (
+				8295D6F21EB5379A0026500A /* images */,
+				8295D6931EB4FB8B0026500A /* iconoImu */,
+				82DAD6891C5107DD0087EF65 /* accelerometro */,
+				82DAD6881C5107DD0087EF65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82DAD6881C5107DD0087EF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82DAD6871C5107DD0087EF65 /* accelerometro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82DAD6891C5107DD0087EF65 /* accelerometro */ = {
+			isa = PBXGroup;
+			children = (
+				82DAD68A1C5107DD0087EF65 /* AppDelegate.swift */,
+				826E965E1EB699C2002003B0 /* BLEDiscovery.swift */,
+				82DAD68C1C5107DD0087EF65 /* ViewController.swift */,
+				82DAD68E1C5107DD0087EF65 /* Main.storyboard */,
+				82DAD6911C5107DD0087EF65 /* Assets.xcassets */,
+				8295D7021EB54FB80026500A /* LaunchScreen.storyboard */,
+				8295D6F91EB54D5E0026500A /* Info.plist */,
+				8295D7081EB55A4B0026500A /* iPad.storyboard */,
+			);
+			path = accelerometro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82DAD6861C5107DD0087EF65 /* accelerometro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82DAD6991C5107DD0087EF65 /* Build configuration list for PBXNativeTarget "accelerometro" */;
+			buildPhases = (
+				82DAD6831C5107DD0087EF65 /* Sources */,
+				82DAD6841C5107DD0087EF65 /* Frameworks */,
+				82DAD6851C5107DD0087EF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = accelerometro;
+			productName = accelerometro;
+			productReference = 82DAD6871C5107DD0087EF65 /* accelerometro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82DAD67F1C5107DD0087EF65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "ai2-upv";
+				TargetAttributes = {
+					82DAD6861C5107DD0087EF65 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ES5F8E7C9U;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 82DAD6821C5107DD0087EF65 /* Build configuration list for PBXProject "accelerometro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 82DAD67E1C5107DD0087EF65;
+			productRefGroup = 82DAD6881C5107DD0087EF65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82DAD6861C5107DD0087EF65 /* accelerometro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82DAD6851C5107DD0087EF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8295D6C51EB4FB8C0026500A /* iMessage (27x20pt)@2x.png in Resources */,
+				8295D6CB1EB4FB8C0026500A /* iMessage iPad@2x.png in Resources */,
+				8295D6DA1EB4FB8C0026500A /* iPhone App Icon iOS 5,6@2x.png in Resources */,
+				8295D6BD1EB4FB8C0026500A /* Apple Watch Companion Settings@3x.png in Resources */,
+				8295D6D51EB4FB8C0026500A /* iPad Spotlight iOS 5,6.png in Resources */,
+				8295D6F41EB5379A0026500A /* imu.png in Resources */,
+				8295D6BC1EB4FB8C0026500A /* Apple Watch Companion Settings@2x.png in Resources */,
+				8295D6D41EB4FB8C0026500A /* iPad Settings@2x.png in Resources */,
+				8295D6C11EB4FB8C0026500A /* Apple Watch Notification center (42mm).png in Resources */,
+				8295D7031EB54FB80026500A /* LaunchScreen.storyboard in Resources */,
+				8295D6C41EB4FB8C0026500A /* Icon in Resources */,
+				8295D6DB1EB4FB8C0026500A /* iPhone App Icon iOS 7,9@2x.png in Resources */,
+				8295D6D11EB4FB8C0026500A /* iPad App Icon iOS 7,9@2x.png in Resources */,
+				8295D6E21EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@3x.png in Resources */,
+				8295D6C61EB4FB8C0026500A /* iMessage (27x20pt)@3x.png in Resources */,
+				8295D6CA1EB4FB8C0026500A /* iMessage iPad Pro@2x.png in Resources */,
+				8295D6DD1EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings.png in Resources */,
+				8295D6E01EB4FB8C0026500A /* iPhone Spotlight iOS 7,9.png in Resources */,
+				8295D6BE1EB4FB8C0026500A /* Apple Watch Home Screen@2x.png in Resources */,
+				8295D6D71EB4FB8C0026500A /* iPad Spotlight iOS 7,9.png in Resources */,
+				8295D6C01EB4FB8C0026500A /* Apple Watch Notification center (38mm).png in Resources */,
+				8295D6D01EB4FB8C0026500A /* iPad App Icon iOS 7,9.png in Resources */,
+				8295D6E11EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@2x.png in Resources */,
+				8295D6D21EB4FB8C0026500A /* iPad Pro Icon iOS 9@2x.png in Resources */,
+				8295D6D91EB4FB8C0026500A /* iPhone App Icon iOS 5,6.png in Resources */,
+				8295D6DC1EB4FB8C0026500A /* iPhone App Icon iOS 7,9@3x.png in Resources */,
+				8295D6CD1EB4FB8C0026500A /* iMessage iPhone@3x.png in Resources */,
+				8295D6C21EB4FB8C0026500A /* Apple Watch Short Look (38mm).png in Resources */,
+				8295D7061EB55A4B0026500A /* iPad.storyboard in Resources */,
+				8295D6BF1EB4FB8C0026500A /* Apple Watch Long Look (42mm).png in Resources */,
+				8295D6D31EB4FB8C0026500A /* iPad Settings.png in Resources */,
+				8295D6C91EB4FB8C0026500A /* iMessage App Store.png in Resources */,
+				8295D6DF1EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@3x.png in Resources */,
+				8295D6C31EB4FB8C0026500A /* Apple Watch Short Look (42mm).png in Resources */,
+				8295D6D61EB4FB8C0026500A /* iPad Spotlight iOS 5,6@2x.png in Resources */,
+				8295D6C71EB4FB8C0026500A /* iMessage (32x24pt)@2x.png in Resources */,
+				8295D6CC1EB4FB8C0026500A /* iMessage iPhone@2x.png in Resources */,
+				8295D6CE1EB4FB8C0026500A /* iPad App Icon iOS 5,6.png in Resources */,
+				8295D6C81EB4FB8C0026500A /* iMessage (32x24pt)@3x.png in Resources */,
+				8295D6CF1EB4FB8C0026500A /* iPad App Icon iOS 5,6@2x.png in Resources */,
+				8295D6D81EB4FB8C0026500A /* iPad Spotlight iOS 7,9@2x.png in Resources */,
+				82DAD6921C5107DD0087EF65 /* Assets.xcassets in Resources */,
+				82DAD6901C5107DD0087EF65 /* Main.storyboard in Resources */,
+				8295D6DE1EB4FB8C0026500A /* iPhone Spotlight iOS 5,6 & Settings@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82DAD6831C5107DD0087EF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DAD68D1C5107DD0087EF65 /* ViewController.swift in Sources */,
+				82DAD68B1C5107DD0087EF65 /* AppDelegate.swift in Sources */,
+				826E965F1EB699C2002003B0 /* BLEDiscovery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8295D6F91EB54D5E0026500A /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8295D6F81EB54D5E0026500A /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		8295D7081EB55A4B0026500A /* iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8295D7071EB55A4B0026500A /* Base */,
+				8295D70A1EB55A520026500A /* en */,
+				8295D70C1EB55A530026500A /* es */,
+			);
+			name = iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		82DAD68E1C5107DD0087EF65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82DAD68F1C5107DD0087EF65 /* Base */,
+				8295D6E31EB4FBAC0026500A /* es */,
+				8295D6F11EB4FF0A0026500A /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82DAD6971C5107DD0087EF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82DAD6981C5107DD0087EF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82DAD69A1C5107DD0087EF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = accelerometro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.upv.ai2.accelerometro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82DAD69B1C5107DD0087EF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = accelerometro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.upv.ai2.accelerometro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82DAD6821C5107DD0087EF65 /* Build configuration list for PBXProject "accelerometro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DAD6971C5107DD0087EF65 /* Debug */,
+				82DAD6981C5107DD0087EF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82DAD6991C5107DD0087EF65 /* Build configuration list for PBXNativeTarget "accelerometro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DAD69A1C5107DD0087EF65 /* Debug */,
+				82DAD69B1C5107DD0087EF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82DAD67F1C5107DD0087EF65 /* Project object */;
+}
