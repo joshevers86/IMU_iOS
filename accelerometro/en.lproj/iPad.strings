@@ -1,48 +1,90 @@
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "0E8-9q-7iW"; */
-"0E8-9q-7iW.text" = "Label";
+/* Class = "UILabel"; text = "Giróscopo"; ObjectID = "1oS-gD-MSu"; */
+"1oS-gD-MSu.text" = "Gyroscope (rps)";
 
-/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "4qg-4i-TnF"; */
-"4qg-4i-TnF.normalTitle" = "Stop";
+/* Class = "UILabel"; text = "0.0"; ObjectID = "1tK-kh-HNn"; */
+"1tK-kh-HNn.text" = "0.0";
 
-/* Class = "UILabel"; text = "X:"; ObjectID = "EMQ-43-KLq"; */
-"EMQ-43-KLq.text" = "X:";
+/* Class = "UILabel"; text = "X:"; ObjectID = "2u8-t0-TAq"; */
+"2u8-t0-TAq.text" = "X:";
 
-/* Class = "UILabel"; text = "X:"; ObjectID = "Fpn-Tt-03D"; */
-"Fpn-Tt-03D.text" = "X:";
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "45j-Y2-QpD"; */
+"45j-Y2-QpD.normalTitle" = "Stop";
 
-/* Class = "UILabel"; text = "Giróscopo"; ObjectID = "SQt-kw-Mbn"; */
-"SQt-kw-Mbn.text" = "Gyroscope";
+/* Class = "UILabel"; text = "0.0"; ObjectID = "6Ja-4M-alV"; */
+"6Ja-4M-alV.text" = "0.0";
 
-/* Class = "UILabel"; text = "Y:"; ObjectID = "Tle-7p-V03"; */
-"Tle-7p-V03.text" = "Y:";
+/* Class = "UILabel"; text = "Y:"; ObjectID = "6aL-DC-DIJ"; */
+"6aL-DC-DIJ.text" = "Y:";
 
-/* Class = "UIButton"; normalTitle = "Run"; ObjectID = "ZkR-Qy-g8O"; */
-"ZkR-Qy-g8O.normalTitle" = "Run";
+/* Class = "UILabel"; text = "0.0"; ObjectID = "6hu-tX-EL3"; */
+"6hu-tX-EL3.text" = "0.0";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "bkT-tw-wMY"; */
-"bkT-tw-wMY.text" = "Label";
+/* Class = "UILabel"; text = "Acelerométro"; ObjectID = "B87-dF-F89"; */
+"B87-dF-F89.text" = "Accelerometer (G)";
 
-/* Class = "UILabel"; text = "Z:"; ObjectID = "cxL-Na-1P3"; */
-"cxL-Na-1P3.text" = "Z:";
+/* Class = "UILabel"; text = "Z:"; ObjectID = "Ba4-ma-LFA"; */
+"Ba4-ma-LFA.text" = "Z:";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "e75-at-anQ"; */
-"e75-at-anQ.text" = "Label";
+/* Class = "UILabel"; text = "X:"; ObjectID = "Dzz-Jk-DSC"; */
+"Dzz-Jk-DSC.text" = "X:";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "gs2-MI-j5I"; */
-"gs2-MI-j5I.text" = "Label";
+/* Class = "UILabel"; text = "0.0"; ObjectID = "GOL-DR-XoZ"; */
+"GOL-DR-XoZ.text" = "0.0";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "jyx-ec-5SA"; */
-"jyx-ec-5SA.text" = "Label";
+/* Class = "UIButton"; normalTitle = "Run"; ObjectID = "JVB-q2-Uem"; */
+"JVB-q2-Uem.normalTitle" = "Run";
 
-/* Class = "UILabel"; text = "Y:"; ObjectID = "noY-Mf-sfE"; */
-"noY-Mf-sfE.text" = "Y:";
+/* Class = "UILabel"; text = "Y:"; ObjectID = "M70-EN-X8y"; */
+"M70-EN-X8y.text" = "Y:";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "thd-NS-bBq"; */
-"thd-NS-bBq.text" = "Label";
+/* Class = "UILabel"; text = "0.0"; ObjectID = "Opw-DF-tCr"; */
+"Opw-DF-tCr.text" = "0.0";
 
-/* Class = "UILabel"; text = "Acelerométro"; ObjectID = "v2p-VV-V54"; */
-"v2p-VV-V54.text" = "Accelerometer";
+/* Class = "UILabel"; text = "X:"; ObjectID = "U58-FB-xf3"; */
+"U58-FB-xf3.text" = "X:";
 
-/* Class = "UILabel"; text = "Z:"; ObjectID = "zXS-TE-diq"; */
-"zXS-TE-diq.text" = "Z:";
+/* Class = "UILabel"; text = "0.0"; ObjectID = "Wok-Xw-Lqj"; */
+"Wok-Xw-Lqj.text" = "0.0";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "aC0-Hh-eHD"; */
+"aC0-Hh-eHD.text" = "0.0";
+
+/* Class = "UILabel"; text = "Z:"; ObjectID = "fms-x3-iij"; */
+"fms-x3-iij.text" = "Z:";
+
+/* Class = "UILabel"; text = "Z:"; ObjectID = "hXe-Gq-bEg"; */
+"hXe-Gq-bEg.text" = "Z:";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "hgg-yD-uDj"; */
+"hgg-yD-uDj.text" = "0.0";
+
+/* Class = "UILabel"; text = "Y:"; ObjectID = "ic2-hc-FF7"; */
+"ic2-hc-FF7.text" = "Y:";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "kvN-zK-ItL"; */
+"kvN-zK-ItL.text" = "0.0";
+
+/* Class = "UILabel"; text = "Z:"; ObjectID = "kxN-9b-TDY"; */
+"kxN-9b-TDY.text" = "Z:";
+
+/* Class = "UILabel"; text = "Giróscopo BLE"; ObjectID = "pes-Ve-6o2"; */
+"pes-Ve-6o2.text" = "Gyroscope BLE";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "q2q-Lj-A24"; */
+"q2q-Lj-A24.text" = "0.0";
+
+/* Class = "UILabel"; text = "X:"; ObjectID = "rG2-Pu-JWa"; */
+"rG2-Pu-JWa.text" = "X:";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "teg-l5-MOf"; */
+"teg-l5-MOf.text" = "0.0";
+
+/* Class = "UILabel"; text = "Acelerométro BLE"; ObjectID = "upe-yd-MFN"; */
+"upe-yd-MFN.text" = "Accelerometer BLE";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "wKC-6M-gZK"; */
+"wKC-6M-gZK.text" = "0.0";
+
+/* Class = "UILabel"; text = "Y:"; ObjectID = "zeR-3F-u7H"; */
+"zeR-3F-u7H.text" = "Y:";

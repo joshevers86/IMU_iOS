@@ -31,6 +31,10 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var yLectGBLE: UILabel!
     @IBOutlet weak var zLectGBLE: UILabel!
     
+    @IBOutlet weak var heading: UILabel!
+    @IBOutlet weak var roll: UILabel!
+    @IBOutlet weak var pitch: UILabel!
+    
     @IBOutlet weak var scroll: UIScrollView!
     
     fileprivate let manejador = CMMotionManager()
@@ -59,7 +63,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             self.path = dir.appendingPathComponent(nombreFichero)
             
         }
-        self.salvarDatos = "xAcciOS \t yAcciOS \t zAcciOS \t xGyriOS \t yGyriOS \t zGyriOS \t xAccBLE \t yAccBLE \t zAccBLE \t xGyrBLE \t yGyrBLE \t zGyrBLE \n"
+        self.salvarDatos = "timeStamp \t xAcciOS(G) \t yAcciOS(G) \t zAcciOS(G) \t xGyriOS(rps) \t yGyriOS(rps) \t zGyriOS(rps) \t xAccBLE(G) \t yAccBLE(G) \t zAccBLE(G) \t xGyrBLE(rps) \t yGyrBLE(rps) \t zGyrBLE(rps) \t xEulerBLE(rad) \t yEulerBLE(rad) \t zEulerBLE(rad) \n"
         
     }
     
@@ -93,20 +97,24 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
                         DispatchQueue.main.async(execute: {
                             let datosTroceados = datosBLE.components(separatedBy: " ")
                         
-                            self.xLectABLE.text = "\(datosTroceados[5])"
-                            self.yLectABLE.text = "\(datosTroceados[6])"
-                            self.zLectABLE.text = "\(datosTroceados[7])"
+                            self.xLectABLE.text = "\(datosTroceados[9])"
+                            self.yLectABLE.text = "\(datosTroceados[10])"
+                            self.zLectABLE.text = "\(datosTroceados[11])"
                             
                             self.xLectGBLE.text = "\(datosTroceados[1])"
                             self.yLectGBLE.text = "\(datosTroceados[2])"
                             self.zLectGBLE.text = "\(datosTroceados[3])"
+                            
+                            self.heading.text = "\(datosTroceados[5])"
+                            self.roll.text = "\(datosTroceados[6])"
+                            self.pitch.text = "\(datosTroceados[7])"
                             
                             //print("Datos: \(datosTroceados[0]) \(datosTroceados[1]) \(datosTroceados[2]) \(datosTroceados[3]) \(datosTroceados[4]) \(datosTroceados[5]) \(datosTroceados[6]) \(datosTroceados[7]) ")
                             
                             //print( self.xLec.text! + "\t" + self.yLec.text! + "\t" + self.zLec.text! + "\t" + self.xLectG.text! + "\t" + self.yLectG.text! + "\t" + self.zLectZ.text! + "\t" + self.xLectABLE.text! + "\t" + self.yLectABLE.text! + "\t" + self.yLectABLE.text! + "\t" + self.xLectGBLE.text! + "\t" + self.yLectGBLE.text! + "\t" + self.zLectGBLE.text! )
                             
                             
-                            self.salvarDatos += self.xLec.text! + "\t" + self.yLec.text! + "\t" + self.zLec.text! + "\t" + self.xLectG.text! + "\t" + self.yLectG.text! + "\t" + self.zLectZ.text! + "\t" + self.xLectABLE.text! + "\t" + self.yLectABLE.text! + "\t" + self.zLectABLE.text! + "\t" + self.xLectGBLE.text! + "\t" + self.yLectGBLE.text! + "\t" + self.zLectGBLE.text! + "\n"
+                            self.salvarDatos += "\(Double(clock()) / Double(CLOCKS_PER_SEC))" + "\t" + self.xLec.text! + "\t" + self.yLec.text! + "\t" + self.zLec.text! + "\t" + self.xLectG.text! + "\t" + self.yLectG.text! + "\t" + self.zLectZ.text! + "\t" + self.xLectABLE.text! + "\t" + self.yLectABLE.text! + "\t" + self.zLectABLE.text! + "\t" + self.xLectGBLE.text! + "\t" + self.yLectGBLE.text! + "\t" + self.zLectGBLE.text! + "\t" + self.heading.text! + "\t" + self.roll.text! + "\t" + self.pitch.text! + "\n"
                             
                             
                         })

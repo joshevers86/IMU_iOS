@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreBluetooth
+import Darwin
 
 /* https://www.ralfebert.de/tutorials/ios-swift-multipeer-connectivity/
 // por aki --> http://code.tutsplus.com/tutorials/ios-7-sdk-core-bluetooth-practical-lesson--mobile-20741
@@ -286,21 +287,28 @@ class BLEDiscovery : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     func convertirDatos(data: String) -> String! {
         let datosTroceados = data.components(separatedBy: " ")
         let cabecera: String = datosTroceados[0]
+        
         var datoX : Double = 0.0
         var datoY : Double = 0.0
         var datoZ : Double = 0.0
+        
         if cabecera == "a" {
-            datoX = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[1])))/100.0
-            datoY = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[2])))/100.0
-            datoZ = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[3])))/100.0
+            datoX = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[1]))) / 1000.0
+            datoY = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[2]))) / 1000.0
+            datoZ = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[3]))) / 1000.0
 
         }
         if cabecera == "g" {
-            datoX = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[1])))/900.0
-            datoY = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[2])))/900.0
-            datoZ = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[3])))/900.0
+            datoX = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[1]))) / 900.0
+            datoY = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[2]))) / 900.0
+            datoZ = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[3]))) / 900.0
         }
-        //print("DAtos Convertidos: \(cabecera)  \(datoX) \(datoY) \(datoZ)")
+        if cabecera == "e" {
+            datoX = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[1]))) / 900.0
+            datoY = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[2]))) / 900.0
+            datoZ = Double(Int16(bitPattern: convertirHexadecimalAUint(hexadecimal: datosTroceados[3]))) / 900.0
+        }
+        //print("Datos Convertidos: \(cabecera)  \(datoX) \(datoY) \(datoZ)")
         
         return  ("\(cabecera) \(datoX) \(datoY) \(datoZ) ")
     }
@@ -315,10 +323,11 @@ class BLEDiscovery : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
         if (peripheral.name! == "RTX_IMU_1"){
             if let sfd = NSString(data: characteristic.value!, encoding: String.Encoding.utf8.rawValue){
                 //nrf51_1.write(element: sfd as NSString)
-                
+                //print("\(Int64(Date().timeIntervalSince1970 * 1000)) \(sfd as String)")
+                print("\(Double(clock()) / Double(CLOCKS_PER_SEC)) \(sfd as String)")
                 aux = aux  + convertirDatos(data: (sfd as String))//(sfd as String)
                 
-                if tramas[0] == 2 {
+                if tramas[0] == 3 {
                     tramas[0] = 0
                     
                     nrf51_1.removeAll()
@@ -339,7 +348,7 @@ class BLEDiscovery : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
         if (peripheral.name! == "RTX_IMU_2"){
             if let sfd = NSString(data: characteristic.value!, encoding: String.Encoding.utf8.rawValue){
                 aux2 = aux2  + convertirDatos(data: (sfd as String))//(sfd as String)
-                if tramas[1] == 2 {
+                if tramas[1] == 3 {
                     tramas[1] = 0
                     nrf51_2.removeAll()
                     nrf51_2 = aux2

@@ -59,6 +59,10 @@
 
 /* Begin PBXFileReference section */
 		826E965E1EB699C2002003B0 /* BLEDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDiscovery.swift; sourceTree = "<group>"; };
+		827ED8351EBF62F000D9F665 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		827ED8371EBF634500D9F665 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		827ED83B1EBF63A100D9F665 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iPad.strings; sourceTree = "<group>"; };
+		827ED83D1EBF63B200D9F665 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/iPad.strings; sourceTree = "<group>"; };
 		8295D6951EB4FB8B0026500A /* Apple Watch Companion Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Companion Settings@2x.png"; sourceTree = "<group>"; };
 		8295D6961EB4FB8B0026500A /* Apple Watch Companion Settings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Companion Settings@3x.png"; sourceTree = "<group>"; };
 		8295D6971EB4FB8B0026500A /* Apple Watch Home Screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch Home Screen@2x.png"; sourceTree = "<group>"; };
@@ -98,14 +102,10 @@
 		8295D6B91EB4FB8C0026500A /* iPhone Spotlight iOS 7,9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 7,9.png"; sourceTree = "<group>"; };
 		8295D6BA1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 7,9@2x.png"; sourceTree = "<group>"; };
 		8295D6BB1EB4FB8C0026500A /* iPhone Spotlight iOS 7,9@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Spotlight iOS 7,9@3x.png"; sourceTree = "<group>"; };
-		8295D6E31EB4FBAC0026500A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		8295D6F11EB4FF0A0026500A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8295D6F31EB5379A0026500A /* imu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imu.png; sourceTree = "<group>"; };
 		8295D6F81EB54D5E0026500A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		8295D7021EB54FB80026500A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8295D7071EB55A4B0026500A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPad.storyboard; sourceTree = "<group>"; };
-		8295D70A1EB55A520026500A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iPad.strings; sourceTree = "<group>"; };
-		8295D70C1EB55A530026500A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/iPad.strings; sourceTree = "<group>"; };
 		829AE6F71EB7F56B000D0520 /* enviar_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enviar_64.png; sourceTree = "<group>"; };
 		82DAD6871C5107DD0087EF65 /* accelerometro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accelerometro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DAD68A1C5107DD0087EF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "ai2-upv";
 				TargetAttributes = {
 					82DAD6861C5107DD0087EF65 = {
@@ -358,8 +358,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				8295D7071EB55A4B0026500A /* Base */,
-				8295D70A1EB55A520026500A /* en */,
-				8295D70C1EB55A530026500A /* es */,
+				827ED83B1EBF63A100D9F665 /* en */,
+				827ED83D1EBF63B200D9F665 /* es */,
 			);
 			name = iPad.storyboard;
 			sourceTree = "<group>";
@@ -368,8 +368,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				82DAD68F1C5107DD0087EF65 /* Base */,
-				8295D6E31EB4FBAC0026500A /* es */,
-				8295D6F11EB4FF0A0026500A /* en */,
+				827ED8351EBF62F000D9F665 /* en */,
+				827ED8371EBF634500D9F665 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -391,8 +391,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -436,8 +438,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -456,6 +460,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
