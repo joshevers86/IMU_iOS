@@ -71,6 +71,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBAction func iniciarLectura(_ sender: Any) {
         lecturaAcelerometro()
         lecturaGiroscopo()
+        inicio.connectDevice()
         runLecturaBle = true
         
     }
@@ -81,6 +82,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     }
     
     @IBAction func pararLectura(_ sender: Any) {
+        inicio.disconnectDevice()
         self.manejador.stopAccelerometerUpdates()
         self.manejador.stopGyroUpdates()
         runLecturaBle = false

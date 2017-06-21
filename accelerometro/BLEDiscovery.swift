@@ -73,10 +73,25 @@ class BLEDiscovery : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
         
         //lanzando el CBCentralManager
         //let centralQueue = dispatch_queue_create("es.upv.ai2", DISPATCH_QUEUE_SERIAL)
-        let centralQueue = DispatchQueue(label: "es.upv.ai2", attributes: DispatchQueue.Attributes.concurrent)
-        centralManager = CBCentralManager(delegate: self, queue: centralQueue)
+        /*let centralQueue = DispatchQueue(label: "es.upv.ai2", attributes: DispatchQueue.Attributes.concurrent)
+        centralManager = CBCentralManager(delegate: self, queue: centralQueue)*/
         //centralManager = CBCentralManager(delegate: self, queue: nil)
     }
+    
+    
+    func connectDevice(){
+        let centralQueue = DispatchQueue(label: "es.upv.ai2", attributes: DispatchQueue.Attributes.concurrent)
+        centralManager = CBCentralManager(delegate: self, queue: centralQueue)
+    }
+    func disconnectDevice(){
+        for pble in self.peripheralBLE {
+            if  ( (pble?.state == CBPeripheralState.connected) ){
+                centralManager.cancelPeripheralConnection(pble!)
+                print("Desconectando periferico: \(pble!)")
+            }
+        }
+    }
+    
     
     /*
     * Funcion para escanear dispositivos BLE, solo son visibles los que correspondan con el Servicio UUID que este dado de
@@ -141,7 +156,7 @@ class BLEDiscovery : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
             if  ( pble != peripheral || (pble?.state == CBPeripheralState.disconnected) ){
                 
                 central.connect(peripheral, options: nil)
-                print("Connecting to peripheral \(peripheral)")
+                print("Conectando con el periferico: \(peripheral)")
             }
         }
     }
@@ -178,7 +193,7 @@ class BLEDiscovery : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
         var con = 0
         for pbledis in self.peripheralBLE {
            if (pbledis == peripheral){
-                print("Device disconnected\(peripheral). (\(error!.localizedDescription))")
+                print("Device disconnected\(pbledis!). ") // (\(error!.localizedDescription))")
                 self.peripheralBLE.remove(at: con)
             }
             con += 1
@@ -468,11 +483,5 @@ class BLEDiscovery : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
                 //print("\(peripheral.name!)-->\(sfd)")
             }
         }
-        
-        
-        
-        
-        
-        
     }
 }
